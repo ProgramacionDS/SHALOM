@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /SHALOM/
+RewriteRule ^index\.html$ index.php [R=301,L]
+RewriteRule ^perfil\.html$ modules/perfil.php [R=301,L]
+RewriteRule ^cargueros\.html$ modules/cargueros/index.php [R=301,L]
+RewriteRule ^manana\.html$ modules/cargueros/manana.php [R=301,L]
+RewriteRule ^tarde\.html$ modules/cargueros/tarde.php [R=301,L]
+RewriteRule ^mantenimiento\.html$ modules/mantenimiento.php [R=301,L]
+RewriteRule ^asistencia\.html$ modules/personal/asistencia.php [R=301,L]
+</IfModule>
